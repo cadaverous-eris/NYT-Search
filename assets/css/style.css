@@ -92,5 +92,7 @@ select.form-control:focus::-ms-value {
 .article-div {
 	background: #ecf0f1;
 	color: #2c3e50;
+	padding: 5px;
+	margin: 20px;
 }
 
