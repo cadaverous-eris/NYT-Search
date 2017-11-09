@@ -5,7 +5,6 @@ $(document).ready(function(){
 	var numRecords;
 	var startYr;
 	var endYr;
-	var url = "https://api.nytimes.com/svc/search/v2/articlesearch.json";
 
 	var title;
 	var author;
@@ -15,6 +14,8 @@ $(document).ready(function(){
 	var articleDiv;
 
 	$("#search-button").on("click", function(e){
+		var url = "https://api.nytimes.com/svc/search/v2/articlesearch.json";
+		
 		e.preventDefault();
 		search = $("#search").val();
 		numRecords = $("#num-records").val();
