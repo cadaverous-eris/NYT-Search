@@ -15,7 +15,7 @@ $(document).ready(function(){
 
 	$("#search-button").on("click", function(e){
 		var url = "https://api.nytimes.com/svc/search/v2/articlesearch.json";
-		
+
 		e.preventDefault();
 		search = $("#search").val();
 		numRecords = $("#num-records").val();
@@ -51,7 +51,7 @@ $(document).ready(function(){
 			for(var i = 0; i < numRecords; i++){
 				console.log(response.response);
 				articleDiv = $("<div>");
-				articleDiv.addClass("article-div");
+				articleDiv.addClass("article-div rounded");
 				title = $("<h3>");
 				title.addClass("article-title");
 				title.text(response.response.docs[i].headline.main);
